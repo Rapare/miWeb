@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cPanel IDE Concept</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="ide-page">
+  <div class="ide-shell">
+    <header class="ide-topbar">
+      <div class="ide-tabs">
+        <button class="tab active">main.py</button>
+        <button class="tab">+</button>
+      </div>
+      <div class="ide-actions">
+        <button class="run-btn">▶ Run</button>
+        <button>Share</button>
+        <button>Debug</button>
+      </div>
+      <input type="text" value="Command Line Arguments" aria-label="Command arguments" />
+    </header>
+
+    <main class="ide-body">
+      <section class="editor-panel">
+        <ol>
+          <li><span class="comment">#exercise 1</span></li>
+          <li><span class="keyword">print</span>(<span class="string">'Hello World'</span>)</li>
+          <li></li>
+          <li><span class="comment">#exercise 2:</span></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+
+      <section class="terminal-panel">
+        <div class="terminal-header">
+          <span class="active">TERMINAL</span>
+          <span>PROBLEMS</span>
+        </div>
+        <div class="terminal-body">▮</div>
+      </section>
+    </main>
+  </div>
+
+  <section class="ide-note">
+    <h1>Can this run on cPanel?</h1>
+    <p>
+      Yes — this interface is a static HTML/CSS concept, so it can be hosted on cPanel as a normal website.
+      To make it fully functional (save files, execute code, terminal access), you will also need a backend service
+      and secure sandboxing, which is not provided by basic shared-hosting cPanel plans.
+    </p>
+    <p><a href="index.html">Back to home</a></p>
+  </section>
+</body>
+</html>
