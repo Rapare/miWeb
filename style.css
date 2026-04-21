@@ -127,3 +127,123 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+/* cPanel IDE concept page */
+body.ide-page {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  color: #1f2937;
+}
+
+.ide-shell {
+  margin: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.ide-topbar {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 12px;
+  align-items: center;
+  padding: 8px;
+  background: #e5e7eb;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.ide-tabs, .ide-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ide-topbar button,
+.ide-topbar input {
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  padding: 8px 10px;
+  background: #fff;
+}
+
+.ide-topbar input {
+  width: 100%;
+}
+
+.run-btn {
+  background: #16a34a !important;
+  color: #fff;
+  border-color: #15803d !important;
+}
+
+.ide-body {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  min-height: 430px;
+}
+
+.editor-panel {
+  background: #f8fafc;
+  border-right: 1px solid #e5e7eb;
+  padding: 16px;
+}
+
+.editor-panel ol {
+  margin: 0;
+  padding-left: 42px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  color: #111827;
+  line-height: 1.9;
+}
+
+.terminal-panel {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  display: flex;
+  gap: 18px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.terminal-header .active {
+  color: #2563eb;
+}
+
+.terminal-body {
+  padding: 14px;
+  flex: 1;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  background: #f9fafb;
+}
+
+.comment { color: #047857; }
+.keyword { color: #1d4ed8; }
+.string { color: #b45309; }
+
+.ide-note {
+  max-width: 1000px;
+  margin: 24px auto;
+  background: #fff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+@media (max-width: 900px) {
+  .ide-body {
+    grid-template-columns: 1fr;
+  }
+
+  .ide-topbar {
+    grid-template-columns: 1fr;
+  }
+}
